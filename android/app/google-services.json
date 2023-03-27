@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25430591369",
+    "project_id": "projects-2-e9089",
+    "storage_bucket": "projects-2-e9089.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25430591369:android:8a3d2cb0b16b460f628358",
+        "android_client_info": {
+          "package_name": "net.excode.fingold"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25430591369-ok1aj8mb33nm2cguh4dp0ptrnk97q9cl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIKxgA5Fr3hMLfqp5UYqAxrnOpGj4jiXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25430591369-ok1aj8mb33nm2cguh4dp0ptrnk97q9cl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

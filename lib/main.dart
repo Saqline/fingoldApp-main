@@ -15,18 +15,24 @@ import 'package:fingold/localizations/app_localization_delegate.dart';
 import 'package:fingold/localizations/language.dart';
 import 'package:fingold/theme/app_notifier.dart';
 import 'package:fingold/theme/app_theme.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutx/themes/app_theme_notifier.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:provider/provider.dart';
 import 'package:fingold/wallet/models/user.dart';
+
 
 import 'wallet/views/verification_screen.dart';
 
 Future<void> main() async {
   //You will need to initialize AppThemeNotifier class for theme changes.
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
+  await GetStorage.init();
 
   AppTheme.init();
 

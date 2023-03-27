@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:fingold/fcm/fcm.dart';
 import 'package:fingold/theme/app_theme.dart';
 import 'package:fingold/theme/constant.dart';
 import 'package:fingold/wallet/views/bank_screen.dart';
@@ -28,6 +29,12 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   late ThemeData theme;
   late ProfileController controller;
+
+
+  void fcm() async {
+    String? fcmKey = await getFcmToken();
+    print('FCM Key : $fcmKey');
+  }
 
   @override
   void initState() {
@@ -62,6 +69,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     verified(),
                     FxSpacing.height(20),
                     settings(),
+                    // ElevatedButton(onPressed: (){
+                    //   fcm();
+                    // }, child: Text('Fcm')),
                     FxSpacing.height(16),
                     logout(),
                     FxSpacing.height(16),
